@@ -1,4 +1,4 @@
-<x-layout title="View Note">
+<x-app-layout title="View Note">
     <div class="max-w-4xl mx-auto">
         <!-- Navigation -->
         <div class="mb-6 flex items-center justify-between">
@@ -58,4 +58,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-app-layout>

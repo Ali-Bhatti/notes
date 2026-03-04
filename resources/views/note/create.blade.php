@@ -1,4 +1,4 @@
-<x-layout title="Create New Note">
+<x-app-layout title="Create New Note">
     <div class="max-w-4xl mx-auto">
         <!-- Navigation -->
         <div class="mb-6">
@@ -65,4 +65,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-app-layout>

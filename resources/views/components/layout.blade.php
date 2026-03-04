@@ -13,12 +13,12 @@
     <header class="bg-white border-b border-gray-200 mb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
-                <a href="{{ route('welcome') ?? '/' }}" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+                {{-- <a href="{{ route('welcome') ?? '/' }}" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"> --}}
                     📝 Notes
                 </a>
                 <nav>
                     <ul class="flex items-center space-x-6">
-                        <li><a href="{{ route('welcome') ?? '/' }}" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md transition-colors {{ request()->routeIs('welcome') ? 'text-blue-600 bg-blue-50' : '' }}">Home</a></li>
+                        {{-- <li><a href="{{ route('welcome') ?? '/' }}" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md transition-colors {{ request()->routeIs('welcome') ? 'text-blue-600 bg-blue-50' : '' }}">Home</a></li> --}}
                         @auth
                             <li><a href="/notes" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md transition-colors {{ request()->is('notes*') ? 'text-blue-600 bg-blue-50' : '' }}">My Notes</a></li>
                             <li><a href="/notes/create" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md transition-colors {{ request()->routeIs('notes.create') ? 'text-blue-600 bg-blue-50' : '' }}">New Note</a></li>
